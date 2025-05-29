@@ -14,7 +14,6 @@ class HeapArray {
     SIZE m_size = 0;
     SIZE m_capacity = 0;
     Type* m_data = nullptr;
-    Type* m_cursor = nullptr;
     Allocator m_allocator;
 
 public:
@@ -27,7 +26,6 @@ public:
 
     HeapArray(const SIZE t_count, const Allocator& t_allocator = Allocator()) {
         m_data = m_allocator.Allocate(t_count);
-        m_cursor = m_data;
         m_capacity = t_count;
     }
 
