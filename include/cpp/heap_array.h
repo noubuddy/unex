@@ -1,4 +1,6 @@
 #pragma once
+#if defined(BUILD_CPP)
+
 #ifndef HEAP_ARRAY_H
 #define HEAP_ARRAY_H
 
@@ -72,3 +74,5 @@ public:
 };
 
 #endif //HEAP_ARRAY_H
+
+#endif
