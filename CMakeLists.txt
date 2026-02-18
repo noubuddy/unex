@@ -15,7 +15,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC "${PROJECT_SOURCE_DIR}/include
 set(CMAKE_C_STANDARD 17)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
-if(BUILD_CPP)
+#if(BUILD_CPP)
     target_compile_definitions(${PROJECT_NAME} PRIVATE BUILD_CPP)
 
     set_target_properties(${PROJECT_NAME} PROPERTIES
@@ -23,4 +23,4 @@ if(BUILD_CPP)
             CXX_STANDARD_REQUIRED ON
             CXX_EXTENSIONS OFF
     )
-endif()
+#endif()
